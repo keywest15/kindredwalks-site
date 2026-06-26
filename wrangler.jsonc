@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers config — serves the contents of public/ as static
+  // assets. No Worker code; the assets binding handles routing directly.
+  // https://developers.cloudflare.com/workers/static-assets/
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kindredwalks-site",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}
